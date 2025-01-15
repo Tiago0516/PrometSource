@@ -8,17 +8,13 @@ Steps to view the file.
 
 <img width="1253" alt="Screenshot 2025-01-15 at 12 57 22 PM" src="https://github.com/user-attachments/assets/13462f1d-2757-4a38-aff4-221cdc1ca53e" />
 
-
 3) Unzip the zip file
 
-<img width="770" alt="Screenshot 2025-01-15 at 1 04 17 PM" src="https://github.com/user-attachments/assets/5c6539f7-7318-4978-aa95-a9b3df72cef6" />
-
-
+<img width="452" alt="Screenshot 2025-01-15 at 12 58 50 PM" src="https://github.com/user-attachments/assets/871cd2b8-af10-474a-a80b-c17d5f0f711a" />
 
 4) Go to the page folder
 
 <img width="788" alt="Screenshot 2025-01-15 at 1 03 24 PM" src="https://github.com/user-attachments/assets/2772c207-b3c9-4621-bd18-239c909addf4" />
-
 
 5) Open the Index file to start browsing
 
