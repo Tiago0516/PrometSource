@@ -2,7 +2,7 @@ Steps to view the file.
 
 1) Click on the green code button
 
-![image](https://github.com/user-attachments/assets/846a3db2-4fd7-4715-9a43-2f59a8bc2889)
+<img width="1282" alt="Screenshot 2025-01-15 at 12 48 42 PM" src="https://github.com/user-attachments/assets/53043b87-9fda-4cb0-86e0-3988bd8dd691" />
 
 2) Click on Download zip
 
