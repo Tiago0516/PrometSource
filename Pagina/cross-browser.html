@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación con ícono hamburguesa y botón para cerrar -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <nav class="nav" id="nav">
+           <ul>
+                <li><a href="employed.html">¿Are you currently employed?</a></li>
+                <li><a href="motivation.html">¿What motivated you to become a web Programmer?</a></li>
+                <li><a href="languages.html">Can you explain the difference between HTML, CSS, and JavaScript?</a></li>
+                <li><a href="databases.html">What is the difference between SQL and NoSQL databases? When would you use each?</a></li>
+                <li><a href="frameworks.html">What are the key differences between React, Angular, and Vue.js?</a></li>
+                <li><a href="performance.html">How would you optimize a websites performance?</a></li>
+                <li><a href="cross-browser.html">How do you handle cross-browser compatibility issues?</a></li>
+                <li><a href="responsive.html">How do you handle responsive design for different devices?</a></li>
+                <li><a href="debugging.html">How do you approach debugging a website that isn’t displaying correctly?</a></li>
+                <li><a href="collaboration.html">How would you approach collaborating with designers and other developers on a project?</a></li>
+                <li><a href="async.html">Can you explain the concept of asynchronous programming?</a></li>
+                <li><a href="remote.html">Tell me about your experience working remotely.</a></li>
+                <li><a href="challenges.html">Describe a challenging programming problem you faced and how you solved it?</a></li>
+                <li><a href="routine.html">Describe your daily routine as a web Programmer.</a></li>
+                <li><a href="skills.html">What makes you stand out from other web programmer candidates for this position?</a></li>
+            </ul>
+        </nav>
+        <div class="close-menu" id="close-menu">
+            <span class="x-icon">×</span>
+        </div>
+    </div>
+    <div id="welcome-screen">
+    <h1>¿How do you handle cross-browser compatibility issues?</h1>
+    <div class="content-section">
+        <h2>Use Web Standards</h2>
+        <ul>
+            <li>Adhere to Standards: Design and write code following W3C and ECMA specifications. This reduces the likelihood of unexpected behavior across different browsers.</li>
+            <li>Verify Compatibility: Use tools like Can I Use to ensure the technologies you use are compatible with the browsers you need to support.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Compatibility Tools</h2>
+        <ul>
+            <li>Autoprefixer: Automatically adds browser-specific prefixes to CSS (e.g., -webkit- or -ms-).</li>
+            <li>Babel: Transpiles modern JavaScript to a version compatible with older browsers.</li>
+            <li>Polyfills: Use libraries that emulate modern features for older browsers (e.g., core-js for ES6 functionalities).</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Testing Across Multiple Browsers</h2>
+        <ul>
+            <li>Manual Testing: Check the site on popular browsers like Chrome, Firefox, Safari, Edge, and relevant versions of each.</li>
+            <li>Automated Testing: Use tools like BrowserStack, Sauce Labs, or LambdaTest to run tests on various browsers and devices.</li>
+            <li>Development Mode: Enable developer tools in browsers to debug specific issues.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Using CSS Resets or Normalizers</h2>
+        <ul>
+            <li>Normalize.css: Ensures consistent appearance across browsers by adjusting default styles.</li>
+            <li>CSS Reset: Resets default browser styles to prevent unwanted differences.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Conditional Techniques and Fallbacks</h2>
+        <ul>
+            <li>Conditional CSS Queries: Use @supports to apply styles only if the browser supports certain features.</li>
+            <pre><code>@supports (display: grid) { .container { display: grid; } }</code></pre>
+            <li>Conditional JavaScript: Detect support for specific features and act accordingly.</li>
+            <pre><code>if (!window.fetch) { // Use a polyfill for fetch }</code></pre>
+            <li>Fallbacks: Provide alternatives for browsers that don’t support modern features (e.g., downgrade CSS gradients to flat colors).</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Documentation and Support Specifications</h2>
+        <ul>
+            <li>Define Supported Browsers: Before starting the project, clarify which browsers and versions need to be compatible.</li>
+            <li>.browserslistrc File: Use this tool in modern projects to specify target browsers.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Troubleshooting Specific Issues</h2>
+        <ul>
+            <li>Debugging with Integrated Tools: Use developer tools in each browser to identify errors or inconsistencies.</li>
+            <li>Visual Consistency: Check for differences in font rendering, spacing, or styles.</li>
+            <li>Testing Older Versions: Consider testing legacy browsers if your target audience uses them (e.g., IE11).</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Continuous Improvement</h2>
+        <ul>
+            <li>Monitor Browser Usage: Analyze site traffic with tools like Google Analytics to adjust compatibility based on the most-used browsers by your users.</li>
+            <li>Regular Updates: Keep libraries and frameworks up to date to leverage compatibility improvements.</li>
+        </ul>
+    </div>
+</div>
+
+    <!-- Pantalla de contenido -->
+    <div id="content" class="content">
+        <button id="back-btn"><a href="index.html" style="color: white; text-decoration: none;">Regresar al inicio</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<div id="footer">
+    <p>© 2025 Santiago Cuartas. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</html>

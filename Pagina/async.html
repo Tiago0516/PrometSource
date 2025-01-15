@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación con ícono hamburguesa y botón para cerrar -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="employed.html">¿Are you currently employed?</a></li>
+                <li><a href="motivation.html">¿What motivated you to become a web Programmer?</a></li>
+                <li><a href="languages.html">Can you explain the difference between HTML, CSS, and JavaScript?</a></li>
+                <li><a href="databases.html">What is the difference between SQL and NoSQL databases? When would you use each?</a></li>
+                <li><a href="frameworks.html">What are the key differences between React, Angular, and Vue.js?</a></li>
+                <li><a href="performance.html">How would you optimize a websites performance?</a></li>
+                <li><a href="cross-browser.html">How do you handle cross-browser compatibility issues?</a></li>
+                <li><a href="responsive.html">How do you handle responsive design for different devices?</a></li>
+                <li><a href="debugging.html">How do you approach debugging a website that isn’t displaying correctly?</a></li>
+                <li><a href="collaboration.html">How would you approach collaborating with designers and other developers on a project?</a></li>
+                <li><a href="async.html">Can you explain the concept of asynchronous programming?</a></li>
+                <li><a href="remote.html">Tell me about your experience working remotely.</a></li>
+                <li><a href="challenges.html">Describe a challenging programming problem you faced and how you solved it?</a></li>
+                <li><a href="routine.html">Describe your daily routine as a web Programmer.</a></li>
+                <li><a href="skills.html">What makes you stand out from other web programmer candidates for this position?</a></li>
+            </ul>
+        </nav>
+        <div class="close-menu" id="close-menu">
+            <span class="x-icon">×</span>
+        </div>
+    </div>
+    <div id="welcome-screen">
+        <h1>¿Can you explain the concept of asynchronous programming?</h1>
+        <p>Asynchronous programming is an approach where operations (such as file reading, HTTP requests, or database queries) do not block the main execution thread. Instead of waiting for a task to complete before moving to the next one, the program can continue executing other tasks while waiting for an asynchronous operation to finish. This approach improves the efficiency and responsiveness of an application, especially in environments where input/output (I/O) operations are frequent.</p>
+    </div>
+
+    <!-- Pantalla de contenido -->
+    <div id="content" class="content">
+        <button id="back-btn"><a href="index.html" style="color: white; text-decoration: none;">Regresar al inicio</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<div id="footer">
+    <p>© 2025 Santiago Cuartas. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</html>

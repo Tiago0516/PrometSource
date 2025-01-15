@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación con ícono hamburguesa y botón para cerrar -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="employed.html">¿Are you currently employed?</a></li>
+                <li><a href="motivation.html">¿What motivated you to become a web Programmer?</a></li>
+                <li><a href="languages.html">Can you explain the difference between HTML, CSS, and JavaScript?</a></li>
+                <li><a href="databases.html">What is the difference between SQL and NoSQL databases? When would you use each?</a></li>
+                <li><a href="frameworks.html">What are the key differences between React, Angular, and Vue.js?</a></li>
+                <li><a href="performance.html">How would you optimize a websites performance?</a></li>
+                <li><a href="cross-browser.html">How do you handle cross-browser compatibility issues?</a></li>
+                <li><a href="responsive.html">How do you handle responsive design for different devices?</a></li>
+                <li><a href="debugging.html">How do you approach debugging a website that isn’t displaying correctly?</a></li>
+                <li><a href="collaboration.html">How would you approach collaborating with designers and other developers on a project?</a></li>
+                <li><a href="async.html">Can you explain the concept of asynchronous programming?</a></li>
+                <li><a href="remote.html">Tell me about your experience working remotely.</a></li>
+                <li><a href="challenges.html">Describe a challenging programming problem you faced and how you solved it?</a></li>
+                <li><a href="routine.html">Describe your daily routine as a web Programmer.</a></li>
+                <li><a href="skills.html">What makes you stand out from other web programmer candidates for this position?</a></li>
+            </ul>
+        </nav>
+        <div class="close-menu" id="close-menu">
+            <span class="x-icon">×</span>
+        </div>
+    </div>
+    <div id="welcome-screen">
+    <h1>¿How would you optimize a website's performance?</h1>
+    <div class="content-section">
+        <h2>Resource Optimization</h2>
+        <ul>
+            <li>Minify Files: Compress CSS, JavaScript, and HTML to reduce their size (tools like Terser or UglifyJS).</li>
+            <li>Load Scripts Asynchronously: Use async or defer attributes to prevent blocking the loading of main content.</li>
+            <li>Reduce Images: Compress images with tools like TinyPNG or ImageOptim, and use modern formats like WebP.</li>
+            <li>Use Optimized Web Fonts: Implement only the necessary weights and styles, and enable deferred loading.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Reducing HTTP Requests</h2>
+        <ul>
+            <li>Combine Files: Merge CSS and JS whenever possible to reduce the number of requests.</li>
+            <li>Lazy Load Resources: Defer the loading of non-essential images, videos, or scripts at the start.</li>
+            <li>Use SVG Icons or Icon Fonts: Minimize dependence on external images for icons.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Implementing Caching</h2>
+        <ul>
+            <li>Browser Cache: Set cache headers on the server to allow browsers to store reusable files.</li>
+            <li>Service Workers: For Progressive Web Apps (PWAs), use service workers to serve resources from the cache.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Server Optimization</h2>
+        <ul>
+            <li>Use a CDN (Content Delivery Network): Distribute resources through global servers to reduce latency.</li>
+            <li>Gzip or Brotli Compression: Compress files on the server before sending them to the client.</li>
+            <li>Optimize Server Configuration: Ensure your server (Apache, Nginx, etc.) is well-configured to handle requests efficiently.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Code Improvements</h2>
+        <ul>
+            <li>Reduce Unused CSS: Use tools like PurifyCSS to eliminate unnecessary styles.</li>
+            <li>Avoid Heavy JavaScript: Minimize the use of large libraries and consider lightweight alternatives.</li>
+            <li>Load Only What’s Needed: Implement techniques like code splitting to deliver only what is required on each page.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Network Optimization</h2>
+        <ul>
+            <li>HTTP/2 or HTTP/3: Improve data transfer with request multiplexing.</li>
+            <li>DNS Prefetch and Preconnect: Reduce the time needed to connect to external domains.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Measurement and Monitoring</h2>
+        <ul>
+            <li>Use Analysis Tools: Lighthouse to analyze and optimize performance.</li>
+            <li>PageSpeed Insights for specific recommendations.</li>
+            <li>WebPageTest to measure detailed loading speeds.</li>
+            <li>Continuous Monitoring: Use tools like New Relic or Dynatrace to identify bottlenecks in real time.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Enhancing User Experience</h2>
+        <ul>
+            <li>Prioritize Visible Content (Critical Rendering Path): Optimize the content displayed on the first screen.</li>
+            <li>Server-Side Rendering (SSR) or Static Site Generation (SSG): Improve initial load times for dynamic sites.</li>
+            <li>Preload Critical Resources: Use <code>&lt;link rel="preload"&gt;</code> tags to prioritize important resources.</li>
+        </ul>
+    </div>
+</div>
+
+    <!-- Pantalla de contenido -->
+    <div id="content" class="content">
+        <button id="back-btn"><a href="index.html" style="color: white; text-decoration: none;">Regresar al inicio</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<div id="footer">
+    <p>© 2025 Santiago Cuartas. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</html>

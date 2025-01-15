@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación con ícono hamburguesa y botón para cerrar -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <nav class="nav" id="nav">
+           <ul>
+                <li><a href="employed.html">¿Are you currently employed?</a></li>
+                <li><a href="motivation.html">¿What motivated you to become a web Programmer?</a></li>
+                <li><a href="languages.html">Can you explain the difference between HTML, CSS, and JavaScript?</a></li>
+                <li><a href="databases.html">What is the difference between SQL and NoSQL databases? When would you use each?</a></li>
+                <li><a href="frameworks.html">What are the key differences between React, Angular, and Vue.js?</a></li>
+                <li><a href="performance.html">How would you optimize a websites performance?</a></li>
+                <li><a href="cross-browser.html">How do you handle cross-browser compatibility issues?</a></li>
+                <li><a href="responsive.html">How do you handle responsive design for different devices?</a></li>
+                <li><a href="debugging.html">How do you approach debugging a website that isn’t displaying correctly?</a></li>
+                <li><a href="collaboration.html">How would you approach collaborating with designers and other developers on a project?</a></li>
+                <li><a href="async.html">Can you explain the concept of asynchronous programming?</a></li>
+                <li><a href="remote.html">Tell me about your experience working remotely.</a></li>
+                <li><a href="challenges.html">Describe a challenging programming problem you faced and how you solved it?</a></li>
+                <li><a href="routine.html">Describe your daily routine as a web Programmer.</a></li>
+                <li><a href="skills.html">What makes you stand out from other web programmer candidates for this position?</a></li>
+            </ul>
+        </nav>
+        <div class="close-menu" id="close-menu">
+            <span class="x-icon">×</span>
+        </div>
+    </div>
+    <div id="welcome-screen">
+    <h1>¿How do you approach debugging a website that isn’t displaying correctly?</h1>
+    <div class="content-section">
+        <h2>Identify the Problem</h2>
+        <ul>
+            <li><strong>Verify the Scope:</strong> Does it occur in all browsers or just one? Does it affect all devices or only specific screen sizes? Is it a global issue on the site or specific to a page/component?</li>
+            <li><strong>Recreate the Problem:</strong> Try reproducing the error in your development environment to better understand it.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Inspect with Browser Tools</h2>
+        <ul>
+            <li><strong>Developer Tools:</strong> Use built-in tools in browsers like Chrome DevTools or Firefox Developer Tools to inspect HTML and CSS code to identify conflicts, overridden styles, or incorrect properties.</li>
+            <li><strong>Console Errors:</strong> Look for JavaScript-related error messages in the Console tab. Check for warnings about invalid styles or unloaded resources.</li>
+            <li><strong>Network Tab:</strong> Ensure all resources (CSS, JS, images) load correctly. Look for 404 errors or excessive load times.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Verify the Code</h2>
+        <ul>
+            <li><strong>HTML:</strong> Ensure proper DOM structure (e.g., well-closed and nested tags).</li>
+            <li><strong>CSS:</strong> Check for conflicting styles or improperly applied rules. Verify the use of units and properties compatible with target browsers.</li>
+            <li><strong>JavaScript:</strong> Look for syntax errors or missing dependencies.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Compatibility Issues</h2>
+        <ul>
+            <li><strong>Check Compatibility:</strong> Use tools like Can I Use to confirm the technologies used (CSS properties, JS functions) are supported by target browsers.</li>
+            <li><strong>Polyfills or Alternatives:</strong> Implement solutions for older browsers if necessary. Use Babel to transpile modern JavaScript.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Debugging Design</h2>
+        <ul>
+            <li><strong>CSS:</strong> Inspect the cascade to check which rules apply or don't. Verify positioning issues, such as z-index, collapsed margins, or containers with no height.</li>
+            <li><strong>Media Queries:</strong> Ensure they respond correctly to screen sizes. Use developer tools to simulate different resolutions.</li>
+            <li><strong>Images and Fonts:</strong> Check the paths are correct. Verify the size and format of images.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Server Review</h2>
+        <ul>
+            <li><strong>Server Errors:</strong> Check server logs for errors affecting responses.</li>
+            <li><strong>Cache Configuration:</strong> Clear browser cache or temporarily disable server-side cache to ensure you're seeing recent changes.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Verify Dependencies</h2>
+        <ul>
+            <li><strong>Libraries and Frameworks:</strong> Ensure compatibility between framework versions (e.g., React, Angular, Bootstrap) and your project.</li>
+            <li><strong>Updates:</strong> Check for recent updates that might have introduced bugs.</li>
+            <li><strong>File Loading:</strong> Verify that external scripts and stylesheets load correctly.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Testing and Validation Tools</h2>
+        <ul>
+            <li><strong>Validators:</strong> Use the W3C Validator to check HTML. Use CSS validators and linters like Stylelint to identify errors.</li>
+            <li><strong>Automated Tests:</strong> Run them across browsers and real devices to detect inconsistencies.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Consult Logs and Analytics</h2>
+        <ul>
+            <li><strong>Server Logs:</strong> Look for errors related to failed requests.</li>
+            <li><strong>Google Analytics:</strong> Check if specific issues are affecting a group of users.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>Solution and Verification</h2>
+        <ul>
+            <li><strong>Step-by-Step Fixes:</strong> Make one change at a time and verify if it resolves the issue.</li>
+            <li><strong>Cross-Testing:</strong> Retest across various browsers, devices, and screen resolutions.</li>
+            <li><strong>Team Collaboration:</strong> If the issue persists, consult with other developers for additional perspectives.</li>
+        </ul>
+    </div>
+</div>
+
+
+    <!-- Pantalla de contenido -->
+    <div id="content" class="content">
+        <button id="back-btn"><a href="index.html" style="color: white; text-decoration: none;">Regresar al inicio</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<div id="footer">
+    <p>© 2025 Santiago Cuartas. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</html>

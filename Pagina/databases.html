@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de navegación con ícono hamburguesa y botón para cerrar -->
+    <div id="menu" class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="employed.html">¿Are you currently employed?</a></li>
+                <li><a href="motivation.html">¿What motivated you to become a web Programmer?</a></li>
+                <li><a href="languages.html">Can you explain the difference between HTML, CSS, and JavaScript?</a></li>
+                <li><a href="databases.html">What is the difference between SQL and NoSQL databases? When would you use each?</a></li>
+                <li><a href="frameworks.html">What are the key differences between React, Angular, and Vue.js?</a></li>
+                <li><a href="performance.html">How would you optimize a websites performance?</a></li>
+                <li><a href="cross-browser.html">How do you handle cross-browser compatibility issues?</a></li>
+                <li><a href="responsive.html">How do you handle responsive design for different devices?</a></li>
+                <li><a href="debugging.html">How do you approach debugging a website that isn’t displaying correctly?</a></li>
+                <li><a href="collaboration.html">How would you approach collaborating with designers and other developers on a project?</a></li>
+                <li><a href="async.html">Can you explain the concept of asynchronous programming?</a></li>
+                <li><a href="remote.html">Tell me about your experience working remotely.</a></li>
+                <li><a href="challenges.html">Describe a challenging programming problem you faced and how you solved it?</a></li>
+                <li><a href="routine.html">Describe your daily routine as a web Programmer.</a></li>
+                <li><a href="skills.html">What makes you stand out from other web programmer candidates for this position?</a></li>
+            </ul>
+        </nav>
+        <div class="close-menu" id="close-menu">
+            <span class="x-icon">×</span>
+        </div>
+    </div>
+    <div id="welcome-screen">
+    <h1>¿What is the difference between SQL and NoSQL databases?</h1>
+    <div class="content-section">
+        <h2>SQL</h2>
+        <ul>
+            <li>Use SQL when you need a structured database with clear relationships and consistent transactions.</li>
+            <li>Use it when you need to maintain complex relationships between data (e.g., related tables).</li>
+            <li>For applications where data integrity and consistency are crucial, such as banks, reservation systems, or ERPs.</li>
+            <li>When working with structured and well-defined data.</li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <h2>NoSQL</h2>
+        <ul>
+            <li>Use NoSQL when working with large volumes of unstructured or semi-structured data, or when you need high scalability and performance.</li>
+            <li>Use it when the data has no fixed structure or changes frequently.</li>
+            <li>For applications with massive scalability needs (e.g., social networks, big data analytics, IoT).</li>
+            <li>In systems with high read/write rates and low latency.</li>
+            <li>When the relationships between data are less important.</li>
+        </ul>
+    </div>
+</div>
+
+    <!-- Pantalla de contenido -->
+    <div id="content" class="content">
+        <button id="back-btn"><a href="index.html" style="color: white; text-decoration: none;">Regresar al inicio</a></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<div id="footer">
+    <p>© 2025 Santiago Cuartas. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</html>

@@ -1,0 +1,195 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+}
+
+h1, h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Sección de bienvenida */
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Permite que la sección de bienvenida ocupe el espacio disponible, empujando el pie de página hacia abajo */
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 60px; /* Espacio para no tapar el título con el menú */
+}
+
+#welcome-screen h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#welcome-screen p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Menú de navegación */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #34495e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle .bar {
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    display: none;
+    width: 100%;
+    background-color: #34495e;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav.active {
+    display: flex; /* Muestra el menú cuando se activa */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente reducido */
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el icono de cerrar el menú */
+.close-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.close-menu .x-icon {
+    font-size: 30px;
+    color: white;
+}
+
+.menu-toggle.active + .close-menu {
+    display: block; /* Muestra el icono X cuando el menú está activo */
+}
+
+/* Sección de contenido */
+.content {
+    display: none;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Botón regresar */
+#back-btn {
+    margin-top: 20px;
+    display: center;
+}
+
+/* Estilos para la visualización en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+}
+
+/* Estilos para el pie de página */
+#footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Esto asegura que el pie se mantenga en la parte inferior */
+}
+
+#footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
